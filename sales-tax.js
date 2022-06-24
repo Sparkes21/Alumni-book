@@ -35,6 +35,11 @@ const calculateSalesTax = (salesData, taxRates) => {
         results[salesData[i]['name']].totalSales += salesData[i].sales[j];
         results[salesData[i]['name']].totalTaxes += salesData[i].sales[j] * taxRates[salesData[i].province];
       } 
+    } else {
+      for (let j = 0; j < salesData[i]['sales'].length; j++) {
+        results[salesData[i]['name']].totalSales += salesData[i].sales[j];
+        results[salesData[i]['name']].totalTaxes += salesData[i].sales[j] * taxRates[salesData[i].province];
+      } 
     }
     }
     
