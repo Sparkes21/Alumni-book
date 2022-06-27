@@ -30,3 +30,13 @@ const data = {
     follows: ["f05"]
   }
 };
+
+// person who follows the most people
+const biggestFollower = (data) => {
+  let followCount = 0;
+  let mostFollows = '';
+  for (const profile in data) {
+    
+  }
+  
+}
