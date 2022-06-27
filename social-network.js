@@ -43,6 +43,9 @@ const biggestFollower = (data) => {
   }
   console.log(mostFollows);
   return mostFollows;
-}
+};
 
-biggestFollower(data);
+// name of the most followed individual
+const mostPopular = (data) => {
+  
+}
