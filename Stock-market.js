@@ -6,7 +6,9 @@ const maxProfit = (array) => {
 
   for (let i = 0; i <= array.length; i++) {
     buyPrice = array[i];
+    console.log(buyPrice)
     sellPrice = array[i + 1];
+    console.log(sellPrice);
     if (sellPrice > buyPrice) {
       maxProfit = sellPrice - buyPrice
     }
