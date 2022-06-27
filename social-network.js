@@ -37,8 +37,8 @@ const biggestFollower = (data) => {
   let mostFollows = '';
   for (const user in data) {
     if (data[user]['follows'].length > followCount) {
-      followCount += data[user]['follows'].length;
-      mostFollows += data[user]['name'];
+      followCount = data[user]['follows'].length;
+      mostFollows = data[user]['name'];
     }
   }
   console.log(mostFollows);
